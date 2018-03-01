@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/views/layouts/base_tiles_layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/layouts/tile_header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/views/layouts/tile_footer.jsp"/>
+    </definition>
+
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/index.jsp"/>
+    </definition>
+    <definition name="signIn" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/signIn.jsp"/>
+    </definition>
+    <definition name="clientRegistration" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/clientRegistration.jsp"/>
+    </definition>
+    <definition name="bookRegistration" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/bookRegistration.jsp"/>
+    </definition>
+    <definition name="authorRegistration" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/authorRegistration.jsp"/>
+    </definition>
+    <definition name="genreRegistration" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/genreRegistration.jsp"/>
+    </definition>
+    <definition name="clients" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/clients.jsp"/>
+    </definition>
+    <definition name="bookView" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/bookView.jsp"/>
+    </definition>
+    <definition name="bookFilter" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/bookFilter.jsp"/>
+    </definition>
+    <definition name="authorView" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/authorView.jsp"/>
+    </definition>
+    <definition name="authorFilter" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/authorFilter.jsp"/>
+    </definition>
+    <definition name="contact" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/contact.jsp"/>
+    </definition>
+    <definition name="admin-author" extends="baseLayout">
+        <put-attribute name="body" value="/WEB-INF/views/admin/author.jsp"/>
+    </definition>
+
+</tiles-definitions>
